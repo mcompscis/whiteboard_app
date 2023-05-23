@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="detailTab" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.project.presentation.controller.DetailTabController">
+   <children>
+        <TitledPane animated="false" text="Line width" fx:id="titlePane">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ToolBar orientation="VERTICAL" prefWidth="200.0">
+                            <items>
+                                <fx:define>
+                                    <ToggleGroup fx:id="lineWidthGroup"/>
+                                </fx:define>
+                                <RadioButton fx:id="thin" mnemonicParsing="false" text="Thin"
+                                             toggleGroup="$lineWidthGroup"/>
+                                <RadioButton fx:id="medium" mnemonicParsing="false" text="Medium"
+                                             toggleGroup="$lineWidthGroup"/>
+                                <RadioButton fx:id="thick" mnemonicParsing="false" text="Thick"
+                                             toggleGroup="$lineWidthGroup"/>
+                            </items>
+                        </ToolBar>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" text="Color" fx:id="color">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ColorPicker fx:id="colorPicker" onAction="#onColorPickerAction" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+        <TitledPane animated="false" text="Font" fx:id="font">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ToolBar orientation="VERTICAL" prefWidth="200.0">
+                            <ChoiceBox fx:id="fontFamilySelector">
+                                <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Arial" />
+                                        <String fx:value="Georgia" />
+                                        <String fx:value="Verdana" />
+                                    </FXCollections>
+                                </items>
+                            </ChoiceBox>
+                            <Spinner fx:id="fontSizeSelector" min="1.0" max="100.0" initialValue="13.0"
+                                     editable="true"/>
+                            <HBox fx:id="hbox1">
+                                <ToggleButton fx:id="boldButton" text="Bold" focusTraversable="false"
+                                              onAction="#onBoldAction"/>
+                                <ToggleButton fx:id="italicButton" text="Italic" focusTraversable="false"
+                                              onAction="#onItalicAction"/>
+                            </HBox>
+                        </ToolBar>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+   </children>
+</VBox>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<TabPane fx:id="whiteboardTabPane" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/18.0.2"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.project.presentation.controller.WhiteboardController">
+    <tabs>
+        <Tab fx:id="addTab" text="+">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

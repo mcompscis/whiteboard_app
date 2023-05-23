@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<MenuBar BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/18.0.2"
+         xmlns:fx="http://javafx.com/fxml" fx:id="menuBar"
+         fx:controller="cs.project.presentation.controller.MenuBarController">
+    <menus>
+        <Menu mnemonicParsing="false">
+            <graphic>
+                <Label text="File" onMouseClicked="#onfileMenuClicked"></Label>
+            </graphic>
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#onNewWhiteboardAction" text="New Whiteboard"
+                          fx:id="newWhiteboardMenuItem"/>
+                <Menu mnemonicParsing="false" text="Open Whiteboard" fx:id="openMenu">
+                    <items>
+                    </items>
+                </Menu>
+                <MenuItem mnemonicParsing="false" onAction="#onRemoveWhiteboardAction" text="Remove Whiteboard"
+                          fx:id="removeWhiteboardMenuItem"/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" onAction="#onRenameAction" text="Rename"
+                          fx:id="renameWhiteboardMenuItem"/>
+                <MenuItem mnemonicParsing="false" onAction="#onLogOutAction" text="Log Out" fx:id="logOutMenuItem"/>
+                <MenuItem mnemonicParsing="false" onAction="#onCloseAction" text="Close" fx:id="closeAppMenuItem"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Copy" fx:id="copyMenuItem"
+                          onAction="#onCopyAction"/>
+                <MenuItem mnemonicParsing="false" text="Paste" fx:id="pasteMenuItem"
+                          onAction="#onPasteAction"/>
+
+                <MenuItem mnemonicParsing="false" text="Delete Selected Shape" fx:id="deleteMenuItem"
+                          onAction="#onDeleteAction"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#onMaximizeAction" text="Maximize"
+                          fx:id="maximizeMenuItem"/>
+                <MenuItem mnemonicParsing="false" onAction="#onMinimizeAction" text="Minimize"
+                          fx:id="minimizeMenuItem"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

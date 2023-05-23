@@ -1,0 +1,9 @@
+build/
+.gradle
+.idea
+*.class
+*.DS_Store
+*.db
+
+# Ignore Gradle build output directory
+build

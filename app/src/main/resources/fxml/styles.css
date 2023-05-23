@@ -1,0 +1,25 @@
+/* Style for the menu bar */
+.menu-bar {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 4 8 4 8;
+}
+
+/* Style for the tab pane */
+.tab-pane {
+    -fx-background-color: #fff;
+    -fx-tab-min-height: 30px;
+    -fx-tab-max-height: 30px;
+}
+
+/* Default button style */
+.button {
+    -fx-background-color: #2196f3; /* blue */
+    -fx-text-fill: #fff; /* white */
+    -fx-font-size: 12px;
+    -fx-padding: 6 12;
+}
+
+/* Hover style */
+.button:hover {
+    -fx-background-color: #1976d2; /* darker blue */
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="testPane" xmlns="http://javafx.com/javafx/18.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cs.project.presentation.controller.DrawingPaneController"
+            style="-fx-background-color: white;">
+    <children>
+        <Pane fx:id="pane" onMouseDragged="#handleMouseDragged" onMousePressed="#handleMousePressed"
+              onMouseReleased="#handleMouseReleased" AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+              style="-fx-background-color: white;"/>
+    </children>
+</AnchorPane>

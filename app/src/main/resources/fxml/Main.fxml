@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx/18.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cs.project.presentation.controller.MainController" fx:id="mainPane"
+            stylesheets="@styles.css">
+    <top>
+        <fx:include source="MenuBar.fxml"></fx:include>
+    </top>
+    <left>
+        <fx:include source="ToolBar.fxml"></fx:include>
+    </left>
+    <center>
+        <fx:include source="Whiteboard.fxml"></fx:include>
+    </center>
+    <right>
+        <fx:include source="DetailTab.fxml"></fx:include>
+    </right>
+</BorderPane>

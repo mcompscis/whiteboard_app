@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<ToolBar orientation="VERTICAL" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/18.0.2"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.project.presentation.controller.ToolBarController"
+         fx:id="toolBar">
+    <BorderPane.margin>
+        <Insets/>
+    </BorderPane.margin>
+    <items>
+        <Button fx:id="penButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onPenButtonPressed" text="Pen" focusTraversable="false"/>
+        <Button fx:id="rectangleButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onRectangleButtonPressed" text="Rectangle"
+                focusTraversable="false"/>
+        <Button fx:id="circleButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onCircleButtonPressed" text="Circle" focusTraversable="false"/>
+        <Button fx:id="lineButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onLineButtonPressed" text="Line" focusTraversable="false"/>
+        <Button fx:id="textBoxButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onTextBoxButtonPressed" text="Text Box"
+                focusTraversable="false"/>
+        <Button fx:id="selectButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onSelectButtonPressed" text="Select" focusTraversable="false"/>
+        <Button fx:id="eraseButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onMousePressed="#onEraseButtonPressed" text="Erase" focusTraversable="false"/>
+    </items>
+</ToolBar>
